@@ -1,0 +1,29 @@
+BasedOnStyle: LLVM
+Language: Cpp
+Standard: Latest
+IndentWidth: 4
+ColumnLimit: 110
+BreakBeforeBraces: Allman
+PointerAlignment: Left
+AccessModifierOffset: -4
+NamespaceIndentation: None
+AllowShortFunctionsOnASingleLine: Inline
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: false
+AllowShortLambdasOnASingleLine: All
+AlwaysBreakTemplateDeclarations: Yes
+BinPackArguments: false
+BinPackParameters: false
+IncludeBlocks: Regroup
+IncludeCategories:
+  - Regex: '^<(Windows|windows|winrt|d3d|dxgi|dwmapi|dcomp|wrl|shellscalingapi)'
+    Priority: 3
+  - Regex: '^<.*\.h>'
+    Priority: 2
+  - Regex: '^<[a-z_]+>'
+    Priority: 4
+  - Regex: '^"'
+    Priority: 1
+SortIncludes: CaseSensitive
+SpaceAfterTemplateKeyword: false
+FixNamespaceComments: false
